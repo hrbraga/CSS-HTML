@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triagem pré-consulta</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo-pagina">Triagem pré-consulta</h1>
+        <nav>
+            <ul class="ul-botoes">
+                <li><a class="li-nav" href="https://www.google.com">Home</a></li>
+                <li> <a class="li-nav" href="https://www.terra.com">Localização</a></li>
+                <li><a class="li-nav" href="https://www.uol.com.br">Planos</a></li>
+                <li><a class="li-nav" href="https://www.g1.com">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form method="get" action="index.html" enctype="multipart/form-data">
+
+            <h2 class="cadastro-paciente">Cadastro Paciente</h2>
+
+            <label for="Nome" class="perguntas-triagem">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome">
+
+            <label for="sobrenome" class="perguntas-triagem">Sobrenome</label>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+            <br> <br>
+
+            <label for="data-nascimento" class="perguntas-triagem">Data de Nascimento</label>
+            <input type="date" name="data-nascimento" id="data-nascimento">
+
+            <br> <br>
+            <label for="idade" class="perguntas-triagem">Idade</label>
+            <input type="number" name="idade" id="idade" placeholder="Idade do Paciente" min="18">
+
+            <br><br>
+            <label for="email" class="perguntas-triagem">E-mail</label>
+            <input type="text" name="email" id="email" placeholder="Digite seu e-mail">
+
+            <br><br>
+            <div class="perguntas-triagem">Quais sintomas vem apresentando nos últimos dias?</div><br>
+            <input type="checkbox" name="saude" id="Coriza">
+            <label for="coriza" value="coriza">Coriza</label>
+
+            <br>
+            <input type="checkbox" name="saude" id="febre">
+            <label for="febre" value="febre">Febre</label>
+
+            <br>
+            <input type="checkbox" name="saude" id="tosse">
+            <label for="tosse" value="tosse">Tosse</label>
+
+            <br>
+            <input type="checkbox" name="saude" id="dor-de-cabeca">
+            <label for="dor-de-cabeca" value="dor-de-cabeca">Dor de Cabeça</label>
+
+            <br>
+            <input type="checkbox" name="saude" id="outros-sintomas">
+            <label for="outros-sintomas" value="outros-sintomas">Outros sintomas. <i>Descreva abaixo.</i></label>
+
+            <br>
+            <br>
+
+            <label for="relato-sintomas" class="perguntas-triagem">Relate outros sintomas apresentados:</label>
+
+            <br>
+            <Textarea name="relato-sintomas" id="relato-sintomas" cols="40" rows="4"
+                placeholder="Descreva os sintomas apresentados nos últimos 2 dias"></Textarea>
+
+            <br>
+            <br>
+            <label for="planos-de-saúde" class="perguntas-triagem">Plano de saúde: </label>
+            <select id="planos-de-saude" name="planos-de-saude">
+                <option value"">Selecione um plano de saúde</option>
+                <option value="unimed">UNIMED</option>
+                <option value="unipax">UNIPAX</option>
+                <option value="medicale">MEDICALE</option>
+                <option value="viva-bem">VIVA BEM</option>
+            </select>
+            <br><br>
+            <label for="cartao-plano" class="perguntas-triagem">Envie a foto do cartão do plano de saúde</label><br>
+            <input name="cartao-plano" type="file">
+
+            <br>
+            <br>
+
+            <div class="perguntas-triagem">Você aceita os termos de uso dos dados acima citados?</div>
+            <input type="radio" name="termos" id="aceite-termos">
+            <label for="aceite-termos">Aceito os termos de uso.</label>
+            <br>
+            <input type="radio" name="termos" id="recusa-termos" checked>
+            <label for="recusa-termos"><strong>RECUSO</strong> os termos de uso.</label>
+
+            <br> <br>
+
+            <label for="senha" class="perguntas-triagem">Senha de acesso</label>
+
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+
+            <br><br>
+
+            <button onclick="alert('Todos os dados foram apagados')">Limpar os dados</button>
+
+            <input type="submit" value="Enviar dados" onclick="alert('Dados enviados com sucesso!')">
+        </form>
+
+<div class="passos-pos-envio">
+        <p><strong>O que é feito após o envio do formulário acima:</strong></p>
+        <ul class="lista-envio">
+            <li>Seus dados serão analisados em até 1 dia útil;</li>
+            <li>Após análise, nosso serviço de atendimento estará em contato para marcar a consulta e envio do link para
+                pagamento;</li>
+            <li>Feito pagamento sua consulta é confirmada via SMS;</li>
+            <li>Agendamento efetuado com sucesso</li>
+        </ul>
+</div>
+    </main>
+
+    <footer>
+        <h3>Aprendendo e aprendendo.</h3>
+        <a class="links-footer" href="https://www.google.com">Fale conosco</a>
+    </footer>
+
+</body>
+
+</html>

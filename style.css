@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    font-family: poppins;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav { 
+    background-color: blueviolet;
+    border: solid #1E90FF;
+    margin:30px;
+    padding: 25px;
+}
+
+footer {
+    text-align: center;
+    font-weight: bolder;
+    background-color: blue;
+    margin: 30px;
+    padding: 35px;
+    border: solid #1E90FF;
+}
+
+form {
+    background-color: blueviolet;
+    margin: 30px ;
+    padding: 10px 35px 40px 100px;
+    border: solid violet;
+}
+
+.titulo-pagina{
+    text-align: center;
+    text-shadow: 1px 2px 2px gray;
+}
+
+.ul-botoes  {
+    list-style-type: none;
+    font-weight: bolder;
+}
+
+.li-nav {
+    background-color: purple;
+    border: solid #1E90FF;
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgb(235, 172, 12);
+    color: green;
+    text-decoration: none;
+}
+
+.cadastro-paciente{
+    text-align: center;
+    font-size: 36px;
+    text-shadow: 1px 2px 2px gray;
+}
+
+.perguntas-triagem {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Oswald;
+}
+
+.links-footer {
+    color: aliceblue;
+}
+
+.passos-pos-envio {
+    margin: 30px;
+    padding: 30px 35px 40px 100px;
+    border: solid violet;
+    background-color: blueviolet;
+}
+
+.lista-envio{
+    text-align: justify;
+    list-style-image: url(./images/medical.png);
+    list-style: square inside url(./images/medical.png);
+}
